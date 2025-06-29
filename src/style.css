@@ -1,0 +1,27 @@
+@import "tailwindcss";
+*{
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+@theme{
+  --color-lemongreen:#BEE532;
+  --color-graysh:#4F4F4F;
+  --color-blackish:#1B1F0E;
+}
+@layer components{
+  .iconheader {
+    @apply flex items-center gap-[20px]
+  }
+  .headertxt{
+    @apply text-[20px] text-white  leading-none
+  }
+  .maindivider{
+    @apply flex gap-[20px]
+  }
+  .halfdivider{
+    @apply flex flex-col gap-[16px]
+  }
+}
+
